@@ -1,6 +1,7 @@
 class Power < ApplicationRecord
-  belongs_to :user
-  has_many :bookings
+  self.table_name = "poweru_powers"
+  belongs_to :user, foreign_key: "poweru_user_id"
+  has_many :bookings, foreign_key: "poweru_power_id"
   has_one_attached :photo
 
 

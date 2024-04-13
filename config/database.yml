@@ -21,7 +21,7 @@ default: &default
 
 development:
   <<: *default
-  database: power_up_development
+  database: the-mother-db_development
 
   # The specified database role being used to connect to PostgreSQL.
   # To create additional roles in PostgreSQL see `$ createuser --help`.
